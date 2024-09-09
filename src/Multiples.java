@@ -1,4 +1,20 @@
-package PACKAGE_NAME;
+public static void main(String[] args) {
 
-public class Multiples {
+    // Create a integer counts up non-negative multiples of 3 or 5 below 1000.
+    int counts = 0;
+    for (int i= 1; i <= 1000; i++){
+
+        // Find out which numbers divide i.
+        boolean divisibleBy3 = i % 3 == 0;
+        boolean divisibleBy5 = i % 5 == 0;
+
+        if (divisibleBy3){
+            counts ++;
+        } else if (divisibleBy5) {
+            counts ++;
+        }
+    }
+
+    //Prints the result.
+    System.out.println(counts);
 }
